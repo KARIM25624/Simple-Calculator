@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Simple Calculetor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="result">
+                <input type="text" readonly id="res" placeholder="0.0">
+            </div>
+            <div class="buttons">
+                <div id="c" onclick="res.value =''">C</div>
+                <div id="del" onclick="res.value =''">
+                    <i class="fa-solid fa-delete-left"></i>
+                </div>
+                <div id="pers" onclick="res.value+='%'">%</div>
+                <div id="div" onclick="res.value +='/'">/</div>
+                <div  onclick="res.value +='7'">7</div>
+                <div  onclick="res.value +='8'">8</div>
+                <div  onclick="res.value +='9'">9</div>
+                <div id="div" onclick="res.value +='*'">*</div>
+                <div  onclick="res.value +='4'">4</div>
+                <div  onclick="res.value +='5'">5</div>
+                <div  onclick="res.value +='6'">6</div>
+                <div id="sub" onclick="res.value +='-'">-</div>
+                <div  onclick="res.value +='1'">1</div>
+                <div  onclick="res.value +='2'">2</div>
+                <div  onclick="res.value +='3'">3</div>
+                <div id="add" onclick="res.value += '+'">+</div>
+                <div id="zero" onclick="res.value += 0">0</div>
+                <div id="dot" onclick="res.value += '.'">.</div>
+                <div id="eql" onclick="cal()">=</div>
+            </div>
+            <div class="mode" onclick="chmode()">
+            <i id="mode" class="fa-solid fa-moon"></i></div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="index.js">
+       
+    </script>
+</body>
+</html>
